@@ -26,7 +26,7 @@ body {
   line-height: 1.5;
 
   background-color: var(--main-bg);
-  color: $txt-color;
+  color: $black;
 
   @include mobile {
     margin-bottom: 3rem;
