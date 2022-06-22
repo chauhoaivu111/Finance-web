@@ -1,0 +1,12 @@
+@mixin flex($aligin-item,$justify-content) {
+    display: flex;
+    align-items: $aligin-item;
+    justify-content: $justify-content;
+    
+}
+
+
+// style darken background
+@mixin overlay {
+    background-color: rgba($color: #000000, $alpha: 0.6);
+}

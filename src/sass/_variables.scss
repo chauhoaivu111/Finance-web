@@ -1,0 +1,120 @@
+$body-bg:#fff;
+$main-color:#ff0000;
+$txt-color:#fff;
+$white:#fff;
+$black:#000;
+$box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px ;
+
+$header-height:8rem;
+$header-shrink-height:5rem;
+$border-radius:30px;
+$mobile-width:600px;
+$tablet-width:1024px;
+
+$font-family: "Montserrat",sans-serif;
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tapestry&display=swap');
+
+
+
+
+
+
+:root{
+  --main-bg:#ffffff;
+  --second-bg:#fafafb;
+  --txt-color:#455560;
+  --txt-white:#fff;
+  --main-color:#349eff;
+  --second-color:#62b4ff;
+
+  --sidebar-width:300px;
+  --border-radius: 15px;
+  --topnav-height:110px;
+  
+  /* you can see value of chart */
+  --transition-cubic :cubic-bezier(0.175, 0.885 ,0.32, 1.275);
+
+  --box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+
+  overflow-x: unset;
+
+  --color-text:#818181;
+  --main-bg-light: #ffffff;
+  --second-bg-light: #fafafb;
+  --txt-color-light: #455560;
+  --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  --main-bg-dark: #2d2d2d;
+  --second-bg-dark: #202020;
+  --txt-color-dark: #bbbbbb;
+  --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+ 
+
+  touch-action: pan-x pan-y;
+  height: 100% 
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+body {
+  
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.7px;
+}
+
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+a:hover{
+
+  color: var(--main-color);
+
+}
+
+button{
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  color: var(--txt-color);
+}
+
+ul{
+  list-style-type: none;
+}
+
+input{
+  border: 1px solid transparent;
+  outline: 0;
+}
+
+// input:focus {
+//   border: 1px solid var(--color-twitter);
+// }
+
+textarea{
+  border: 1px solid transparent;
+  outline: 0;
+  overflow: hidden;
+  outline: none;
+  resize: none;
+}
+
