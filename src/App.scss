@@ -40,9 +40,12 @@ a {
 }
 
 @media (hover: hover) {
-  a:hover {
-    color: $main-color;
-  }
+  // a:hover {
+  //   color: $main-color;
+  // }
+}
+li{
+  list-style-type: none;
 }
 
 button,

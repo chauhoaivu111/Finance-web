@@ -6,15 +6,20 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../page/home/Home';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
+import Service from '../page/service/Service';
 import About from '../page/about/About';
-
+import News from '../page/news/News';
+import Login from '../page/login/Login';
+import SignUp from '../page/signup/SignUp';
+import Consult from '../page/consult/Consult';
+import LoanService from '../page/loanservice/LoanService';
 
 const Routers = () => {
   return (
     <Switch>
 
        
-         <Route path="/About" component={About}/>
+       
 
        
   
@@ -22,6 +27,17 @@ const Routers = () => {
     <>
     <Header/>
     <Route path='/' exact component = {Home}/>
+    <Route path = '/Service' component={Service} />
+    <Route path='/About' component={About}/>
+    <Route path='/News' component={News}/>
+    <Route path='/Consult' component={Consult}/>
+    <Route path='/Login' component={Login}/>
+    <Route path= '/SignUp' component={SignUp}/>
+    <Route path='/LoanService' component={LoanService}/>
+
+
+    
+
     <Footer/>
     </>
    

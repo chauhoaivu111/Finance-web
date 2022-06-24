@@ -1,0 +1,38 @@
+
+@use '../../sass/' as *;
+
+.main_service{
+
+    padding-top: $header-height;
+    
+    &__frame_title_service{
+        margin: auto;
+        @include flex(center,center);
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        h1{
+            color: #002876;
+        }
+    }
+
+    .frame_service_item{
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+
+        margin-bottom: 10rem;
+
+        @include tablet{
+            grid-template-columns: repeat(1,1fr);
+            margin-bottom: 5rem;
+        }
+
+        @include mobile{
+            grid-template-columns: repeat(1,1fr);
+            margin-bottom: 5rem;
+
+        }
+
+    }
+}

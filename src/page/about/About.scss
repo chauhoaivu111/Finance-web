@@ -1,0 +1,219 @@
+
+@use '../../sass/' as *;
+
+.main_about{
+    padding-top: $header-height;
+
+    &__banner_office{
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        margin-top: 3rem;
+
+       
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+    }
+    &__frame_title{
+        margin: auto;
+        @include flex(center,center);
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+        h1{
+            color: #0038FE;
+        }
+    }
+
+    .First_about{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        @include tablet{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+        
+        @include mobile{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+
+        .frame_img_about{
+            width: 80%;
+            margin: auto;
+
+            img{
+                width: 100%;
+
+            }
+
+            @include tablet {
+                margin-top: 0px;
+    
+            }
+            @include mobile{
+                margin-top: -3rem;
+            }
+        }
+        .content_about{
+            
+            padding-top: 11%;
+            // background-color: antiquewhite;
+            width: 90%;
+            @include tablet{
+                    margin-top: 2rem;
+                    width: 100%;
+                  
+                  
+            }
+
+            @include mobile{
+                margin-top: 2rem;
+                width: 100%;
+             
+                
+              
+        }
+
+        .main_content_style{
+            
+            // background-color: #0038FE;
+            // @include flex(unset,center);
+            width: 80%;
+            margin: auto;
+
+            @include tablet{
+                margin-top: -60px;
+            }
+
+            @include mobile{
+                margin-top: -40px;
+            }
+            
+
+            
+
+
+            h4{
+                width: 80%;
+                color: #002876;
+                @include tablet{
+                    padding-left: 4rem;
+                    width: 90%;
+                }
+                @include mobile{
+                    padding-left: 4rem;
+                    width: 90%;
+                }
+              
+            }
+            p{
+                width: 90%;
+                padding-top: 3rem;
+                color: #002876;
+                font-size: 1.1rem;
+
+                @include tablet{
+                    padding-left: 4rem;
+                }
+                @include mobile{
+                    padding-left: 4rem;
+                }
+            }
+
+        }
+           
+        }
+
+    }
+    .Second_about{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        @include tablet{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+        
+        @include mobile{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+
+        .frame_sub_title{
+
+            width: 70%;
+            margin: auto;
+            @include flex(unset,center);
+            padding-left: 3rem;
+            color: #002876;
+            font-size: 1.1rem;
+
+            span{
+                font-weight: 600;
+                padding-bottom: 1rem;
+            }
+
+            @include tablet{
+                padding-left: 1rem;
+                padding-top: 4rem;
+
+            }
+            @include mobile{
+                padding-left: 2rem;
+                padding-top: 4rem;
+            
+            }
+        }
+    }
+
+    .Third_about{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        @include tablet{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+        
+        @include mobile{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+
+        .frame_sub2_title{
+
+            width: 70%;
+            margin: auto;
+            @include flex(unset,center);
+            padding-left: 3rem;
+            color: #002876;
+            font-size: 1.1rem;
+
+            span{
+                font-weight: 600;
+                padding-bottom: 1rem;
+            }
+
+            @include tablet{
+                padding-left: 1rem;
+                padding-top: 4rem;
+                padding-bottom: 6rem;
+
+            }
+            @include mobile{
+                padding-left: 2rem;
+                padding-top: 4rem;
+                padding-bottom: 6rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+
+@use '../../sass/' as *;
+
+.main_card {
+
+    width: 60%;
+    height: 22rem;
+    background-color: #F9FAFF;
+    border-radius: 20px;
+    margin-top: 5rem;
+    margin: auto;
+    margin-top: 4rem;
+    box-shadow: $box-shadow;
+
+    @include mobile{
+        width: 80%;
+    }
+    
+    .first_element{
+       
+        display: flex;
+        @include flex(unset,center);
+        
+        padding-top: 5rem;
+
+        .icons{
+            width: 15%;
+            height: 15%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .frame_content{
+            margin-left: 2rem;
+            width: 210px;
+            h3{
+                color: #0038FE;
+            }
+        }
+
+
+       
+    }
+    .more_contact{
+
+        @include flex(center,unset);
+        color: #0038FE;
+        font-weight: 500;
+        i{
+            font-size: large;
+        }
+        p{
+            align-items: center;
+            @include flex(center,unset);
+           padding-left: 2rem;
+           padding-top: 2rem;
+           font-family: Inter;
+           font-style: italic;
+           font-weight: 600;
+           cursor: pointer;
+        }
+    }
+    .button_card{
+
+        width: 12rem;
+        height: 2rem;
+        margin: auto;
+        margin-top: 1.5rem;
+        
+        button{
+            width: 100%;
+            height: 100%;
+            background-color: #0038FE;
+            color: white;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+    }
+
+}

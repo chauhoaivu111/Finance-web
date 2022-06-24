@@ -1,0 +1,78 @@
+
+@use  '../../sass/' as *;
+
+.main_news{
+    padding-top: $header-height;
+
+    &__frame_title_news{
+        margin: auto;
+        @include flex(center,center);
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        color: #002876 ;
+    }
+    .line_topic{
+        display: flex;
+        padding-left: 7%;
+        margin-bottom: 6rem;
+
+        .form_topic{
+            width: 14rem;
+            height: 3.5rem;
+            background-color: #0038FE;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+            @include mobile{
+                width: 10rem;
+            }
+            p{
+                margin: auto;
+                @include flex(center,center);
+                padding-top: 9%;
+                color: white;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+        }
+        .line{
+            height: 2px;
+            background-color: #75BDFF;
+            width: 80%;
+            border: 0.2px solid #75BDFF;
+            bottom: 0;
+            margin-top: 3.4rem;
+
+            @include tablet{
+                width: 60%;
+                margin-top: 43px;
+            }
+
+            @include mobile {
+                width: 68%;
+                margin-top: 3.3rem;
+            }
+
+        }
+    }
+    .main_frame_section{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        width: 90%;
+     
+        margin: auto;
+
+        @include tablet{
+            grid-template-columns: repeat(1,1fr);
+        }
+        @include mobile{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+     
+     
+       
+       
+        
+    }
+}
