@@ -1,12 +1,36 @@
 import React from "react";
 import "./News.scss";
-import PostData from "../../assets/data/Post_data.js";
+
 import PostCard from "../../components/postcard/PostCard";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+import Contant from "../../Contant";
+
+
 const componentDidMount = () => {
-  window.scrollTo(0, 0)
-}
-const News = () => {
+  window.scrollTo(0, 0);
+};
+const News = (props) => {
   componentDidMount();
+
+  const [datas, setDatas] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await axios({
+        method: "get",
+        url: "https://tiendungfinance.com.vn/api/posts/",
+        Headers: {
+          Accept: "application.json",
+          "Content-Type": "application/json",
+        },
+      });
+      setDatas(response.data);
+      console.log("id", response.data);
+    };
+    fetchData();
+  }, [props]);
+
   return (
     <div className="main_news">
       <div className="main_news__frame_title_news">
@@ -21,11 +45,20 @@ const News = () => {
       </div>
 
       <div className="main_frame_section">
-        {PostData.slice(0, 4).map((item, index) => (
-          <div key={index}>
-            <PostCard image={item.image} title={item.title} time={item.time} />
-          </div>
-        ))}
+        {datas.slice(0, 4).map((item, index) => {
+          return (
+            <PostCard
+              image={
+                "https://tiendungfinance.com.vn/api/data/images/" +
+                item.coverPhoto
+              }
+              title={item.title}
+              time={item.date}
+              key={index}
+              coverPhoto={item.id}
+            />
+          );
+        })}
       </div>
 
       <div className="line_topic">
@@ -36,12 +69,22 @@ const News = () => {
       </div>
 
       <div className="main_frame_section">
-        {PostData.slice(0, 10).map((item, index) => (
-          <div key={index}>
-            <PostCard image={item.image} title={item.title} time={item.time} />
-          </div>
-        ))}
+      {datas.slice(0, 10).map((item, index) => {
+          return (
+            <PostCard
+              image={
+                "https://tiendungfinance.com.vn/api/data/images/" +
+                item.coverPhoto
+              }
+              title={item.title}
+              time={item.date}
+              key={index}
+              coverPhoto={item.id}
+            />
+          );
+        })}
       </div>
+      
     </div>
   );
 };

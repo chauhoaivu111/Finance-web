@@ -7,7 +7,7 @@ const CardService = (props) => {
     <div className="main_card">
       <div className="first_element">
         <div className="icons">
-          <img src={props.image} />
+          <img src={props.image} alt='' />
         </div>
         <div className="frame_content">
           <h3>{props.Title}</h3>

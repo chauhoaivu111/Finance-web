@@ -103,3 +103,55 @@
         }
     }
 }
+
+.frame_error {
+    margin-top: 150px;
+  
+    @include tablet {
+      margin-top: 150px;
+      margin-right: 10px;
+    }
+  
+    @include mobile {
+      margin-top: 150px;
+      margin-right: 10px;
+      height: 45px;
+  
+      .error {
+        color: red;
+        font-size: 1.1rem;
+        height: 100%;
+      }
+    }
+  
+    .error {
+      color: red;
+    }
+  }
+
+
+  .frame_errors {
+    margin-top: 150px;
+  
+    @include tablet {
+      margin-top: 150px;
+      margin-right: 10px;
+    }
+  
+    @include mobile {
+      margin-top: 150px;
+      margin-right: 10px;
+      height: 45px;
+  
+      .errors {
+        color: green;
+        font-size: 1.1rem;
+        height: 100%;
+      }
+    }
+  
+    .errors {
+      color:green;
+    }
+  }
+  
