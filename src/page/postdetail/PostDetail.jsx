@@ -72,8 +72,8 @@ const getData = datas.find(item => {
 
       </div>
 
-      <Facebook/>
-      <Zalo/>
+      {/* <Facebook/> */}
+      {/* <Zalo/> */}
     </div>
   );
 };

@@ -41,7 +41,7 @@ const Facebook = () => {
 
 
         
-    <MessengerCustomerChat pageId="102069509257886" appId="533152401934863"/>,
+    {/* <MessengerCustomerChat pageId="102069509257886" appId="533152401934863"/>, */}
 
 
     </div>
