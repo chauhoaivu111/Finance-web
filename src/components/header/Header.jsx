@@ -81,7 +81,7 @@ const Header = () => {
         <div className="content_moblie">
           {HeaderRef.map((item, index) => (
             <div className="frame_title_moblie">
-              <Link to ={item.Route} onClick={() => setCloseClick()}>
+              <Link to ={item.Route} >
               
               <p>{item.title}</p>
               </Link>
