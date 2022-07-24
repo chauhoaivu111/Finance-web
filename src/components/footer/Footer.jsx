@@ -54,12 +54,13 @@ const Footer = () => {
           <h4>Sản phẩm thuộc Công Ty TNHH Dịch Vụ Tư Vấn Tiến Dũng</h4>
           <div>
            <p>Mã số thuế: 1101931462 </p>
+           <p>Số điện thoại: 0968774597</p>
             <p>
             Trụ sở: Lô 1616, Đường A7B, KDc Tân Đức, Xã Đức Hoà Hạ, Huyện Đức Hoà, Tỉnh Long An, Việt Nam
             </p>
           </div>
           <div>
-            <h4>Giờ làm việc</h4>
+            <h4 className="time_frame_footer">Giờ làm việc</h4>
             <p>08h - 17h. Thứ 2 - Thứ 7 hằng tuần</p>
           </div>
         </div>

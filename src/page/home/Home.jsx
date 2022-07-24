@@ -15,6 +15,7 @@ import CardService from "../../components/cardservice/CardService";
 import Sub2_image from "../../assets/Home_image/SVG/home3.svg";
 import basicValue from "../../assets/Home_image/basic_value.jpg";
 import HV from "../../assets/Home_image/HV.jpg";
+import HVs from "../../assets/Home_image/HVs.jpg"
 import Swipers from "../../components/swiper/Swiper";
 
 import LoanService from "../loanservice/LoanService";
@@ -86,7 +87,7 @@ const Home = () => {
           <div className="Card_user__First_card">
             <div className="first_content">
               <div className="avatar">
-                <img src={HV} alt="" />
+                <img src={HVs} alt="" />
               </div>
               <div className="content_name">
                 <h3>Trần Triệu Vỹ</h3>
@@ -136,7 +137,7 @@ const Home = () => {
           <div className="Card_user__Third_card">
             <div className="first_content">
               <div className="avatar">
-                <img src={HV} alt="" />
+                <img src={HVs} alt="" />
               </div>
               <div className="content_name">
                 <h3>Trịnh Nhựt Hảo</h3>
