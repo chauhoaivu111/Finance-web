@@ -21,8 +21,9 @@
         display: flex;
         @include flex(unset,center);
         
-        padding-top: 5rem;
-
+        padding-top: 4.2rem;
+        width: 90%;
+        margin: auto;
         .icons{
             width: 15%;
             height: 15%;
@@ -32,7 +33,7 @@
             }
         }
         .frame_content{
-            margin-left: 2rem;
+            margin-left: 1rem;
             width: 210px;
             h3{
                 color: #0038FE;

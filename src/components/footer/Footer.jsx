@@ -15,40 +15,62 @@ const Footer = () => {
           </div>
           <div className="contact_icon">
             <div>
-              <Link to="">
-                <img src={Zalo}  alt='' />
+            <Link
+                   to={{
+                    pathname:
+                      'https://www.facebook.com/admelioravn-102986068104573',
+                  }}
+                  target="_blank"
+                  rel="noreferrer">
+              <i class='bx bxl-facebook-circle' style={{color:"#2f12e5"}} ></i>
               </Link>
             </div>
             <div>
-              <Link to="">
-                <img src={Facebook}  alt='' />
+              <Link   to={{
+                      pathname:
+                        'https://www.facebook.com/admelioravn-102986068104573',
+                    }}
+                  target="_blank"
+                  rel="noreferrer" >
+              <i class='bx bxl-youtube' style={{color:"#e51231",fontSize:"2.5rem"}} ></i>
+              
               </Link>
             </div>
+            <div>
+              <a   
+
+              
+                href='tel: +0326626065' 
+                  target="_blank"
+                  rel="noreferrer" >
+                <i class='bx bxs-phone' style={{color:"#12e544"}}  ></i>
+                
+                </a>
+            </div>
+           
           </div>
         </div>
         <div className="contact_action">
-          <h2>Liên Hệ</h2>
+          <h4>Sản phẩm thuộc Công Ty TNHH Dịch Vụ Tư Vấn Tiến Dũng</h4>
           <div>
-            <h3>Địa Chỉ</h3>
+           <p>Mã số thuế: 1101931462 </p>
             <p>
-              Văn phòng làm việc Lô 1616, Đường A7B, KDC Tân Đức, Ấp Bình Tiền
-              2, Đức Hòa Hạ, Đức Hòa, Long An Giờ làm việc: 08h - 17h. Thứ 2 -
-              Thứ 7 hằng tuần Số điện thoại: 0963 520 10
+            Trụ sở: Lô 1616, Đường A7B, KDc Tân Đức, Xã Đức Hoà Hạ, Huyện Đức Hoà, Tỉnh Long An, Việt Nam
             </p>
           </div>
           <div>
-            <h3>Giờ làm việc</h3>
-            <p>08h - 17h. Thứ 2 - Thứ 7 hằng tuần Số điện thoại: 0963 520 10</p>
+            <h4>Giờ làm việc</h4>
+            <p>08h - 17h. Thứ 2 - Thứ 7 hằng tuần</p>
           </div>
         </div>
         <div className="service_footer">
-          <h2>Dịch vụ</h2>
+          <h4>Các liên kết khác</h4>
 
           <div className="service_title_frame">
             <Link to="">
               {" "}
               <div className="service_title_frame">
-                <i class="bx bx-chevron-right"></i> <p>Vé máy bay, vé tàu</p>{" "}
+                <i class="bx bx-chevron-right"></i> <p>Điều khoản sử dụng</p>{" "}
               </div>
             </Link>
           </div>
@@ -56,7 +78,7 @@ const Footer = () => {
             <Link to="/LoanService">
               {" "}
               <div className="service_title_frame">
-                <i class="bx bx-chevron-right"></i> <p>Vay tiêu dùng</p>{" "}
+                <i class="bx bx-chevron-right"></i> <p>Chính sách bảo mật</p>{" "}
               </div>
             </Link>
           </div>
@@ -64,26 +86,11 @@ const Footer = () => {
             <Link to="">
               {" "}
               <div className="service_title_frame">
-                <i class="bx bx-chevron-right"></i> <p>Hàng tiêu dùng</p>{" "}
+                <i class="bx bx-chevron-right"></i> <p>Phản ánh and góp ý</p>{" "}
               </div>
             </Link>
           </div>
-          <div className="service_title_frame">
-            <Link to="">
-              {" "}
-              <div className="service_title_frame">
-                <i class="bx bx-chevron-right"></i> <p>Bất động sản</p>{" "}
-              </div>
-            </Link>
-          </div>
-          <div className="service_title_frame">
-            <Link to="">
-              {" "}
-              <div className="service_title_frame">
-                <i class="bx bx-chevron-right"></i> <p>Bảo hiểm nhân thọ</p>{" "}
-              </div>
-            </Link>
-          </div>
+          
         </div>
       </div>
       <div className="Hr_bottom">

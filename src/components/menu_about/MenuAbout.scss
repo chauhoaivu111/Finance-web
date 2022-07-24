@@ -1,0 +1,107 @@
+
+
+@use  '../../sass/' as *;
+
+
+
+.main_menu_about{
+
+    
+    
+ 
+
+    padding-left: 4rem;
+
+    @include mobile {
+        padding-left: 0px;
+        margin: auto;
+    }
+
+   
+
+
+
+    .frame_title{
+
+
+        margin: auto;
+
+        @include mobile{
+
+            // padding-top: 1.2rem;
+            
+          
+
+        }
+
+
+  
+      
+
+        h3{
+            cursor: pointer;
+            color: green;
+
+            @include tablet{
+
+                font-size: 1rem;
+
+            }
+
+            @include mobile{
+                font-size: 1.5rem;
+             
+                text-align: center;
+
+                
+            }
+        }
+
+    }
+}
+
+
+.frame_title.actives{
+
+    background-color:  #0038FE;
+    height: 2rem;
+    width: 120%;
+    align-items: center;
+    border-radius: 10px;
+    @include flex(center,center);
+
+    h3{
+        color: white;
+        @include flex(center,center);
+
+        
+        
+    }
+
+    @include mobile{
+
+        background-color:  transparent;
+        height: 2rem;
+        width: 100%;
+        align-items: center;
+        border-radius: 10px;
+        @include flex(center,center);
+        margin: auto;
+    
+        h3{
+            color:  #0038FE;
+            @include flex(center,center);
+            
+            font-size: large;
+
+            
+    
+            
+            
+        }
+
+
+    }
+
+   
+}

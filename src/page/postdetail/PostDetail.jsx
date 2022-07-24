@@ -1,10 +1,10 @@
-import { ListItem } from "@mui/material";
+
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-import Facebook from "../../components/messenger/facebook/Facebook";
-import Zalo from "../../components/messenger/zalo/Zalo";
+import Swipers from "../../components/swiper/Swiper";
+import PostData from "../../assets/data/Post_data";
 
 
 const PostDetail = (props) => {
@@ -57,14 +57,20 @@ const getData = datas.find(item => {
     <div>
       <div style={{ paddingTop: "300px" }}>
 
-     <h1>ffff</h1>
+     {
+      PostData.slice(0.1).map((item,index) =>(
+        <div key={index} dangerouslySetInnerHTML={{__html: item.content}}/>
+
+     
+      ))
+     }
 
      {getData && (
         <div>
           <h1>{getData.content}</h1>
           <h2>id: {getData.id}</h2>
           <h2>{getData.title}</h2>
-          <img src={"https://tiendungfinance.com.vn/api/data/images/" + getData.coverPhoto}/>
+          <img src={"https://tiendungfinance.com.vn/api/data/images/" + getData.coverPhoto} alt =''/>
         </div>
       )}
   
@@ -72,8 +78,8 @@ const getData = datas.find(item => {
 
       </div>
 
-      {/* <Facebook/> */}
-      {/* <Zalo/> */}
+      
+      <Swipers/>
     </div>
   );
 };

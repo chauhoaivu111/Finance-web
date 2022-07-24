@@ -6,7 +6,8 @@ const PostData =[
         image:imgPost,
         title:"ĐĂNG KÝ VAY TÍN CHẤP, ĐƠN GIẢN HƠN BẠN NGHĨ",
         time:"13-06-2022",
-        id:"1"
+        id:"1",
+        content: "<h1>chauhoaivu</h1>"
     },
     {
         image:imgPost,

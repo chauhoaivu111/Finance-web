@@ -1,0 +1,44 @@
+
+@use  '../../../sass/' as *;
+
+
+.main_value{
+
+    padding-top: $header-height;
+
+    .frame_value{
+
+
+        padding-top: 6rem;
+
+        padding-bottom: 3rem;
+        
+
+
+        .frame_img_value{
+
+
+         width: 80%;
+        height: 60%;
+        margin: auto;
+      
+
+        @include mobile{
+        margin-bottom: 4rem;
+        width: 100%;
+        height: 90%;
+       
+
+
+        }
+
+       
+
+        img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        }
+    }
+}

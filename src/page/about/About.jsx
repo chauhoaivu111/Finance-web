@@ -4,20 +4,40 @@ import Banner_office from "../../assets/About_img/office.jpg";
 import BG from "../../assets/About_img/BG.jpg";
 import sub from "../../assets/About_img/sub_img_about.jpg";
 import sub2 from "../../assets/About_img/sub2_img_about.jpg";
+import ThemeMenu from "../../components/thememenu/ThemeMenu";
+import about_img1 from '../../assets/About_img/about_img1.jpg'
+
+
 const componentDidMount = () => {
   window.scrollTo(0, 0)
 }
 
+
+
 const About = () => {
   componentDidMount();
+
+// /----------------------------------------/ 
+
+
+
+
+
   return (
     <div className="main_about">
-      <div className="main_about__banner_office">
-        <img src={Banner_office} alt='' />
-      </div>
+     
       <div className="main_about__frame_title">
-        <h1>Giới Thiệu</h1>
+      <ThemeMenu/>
       </div>
+
+      <div className="main_about__banner_office">
+        <img src={about_img1} alt='' />
+      </div>
+
+   
+
+
+     
 
       <div className="First_about">
         <div className="frame_img_about">

@@ -2,11 +2,15 @@
 @use "../../sass//breakpoint" as *;
 
 .main_footer {
+
+
   hr {
     width: 50%;
     margin: auto;
+    color: gray !important;
+    background-color:grey;
 
-    border: 1px solid rgb(193, 191, 191);
+    border: 0.5px solid rgb(193, 191, 191) !important;
    @include tablet {
     border: 0.5px solid  rgb(193, 191, 191);
    }
@@ -21,6 +25,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 3rem;
+    
 
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
@@ -46,12 +51,16 @@
       .contact_icon {
         display: flex;
         @include flex(center, center);
-        padding-left: 3rem;
-        img {
-          width: 50%;
-          height: 50%;
+        padding-top: 1rem;
+        margin-left: 1rem;
 
-          padding-top: 1rem;
+
+        
+
+        i{
+          font-size: 2rem;
+          padding-right: 1rem;
+          cursor: pointer;
         }
       }
     }
@@ -59,22 +68,26 @@
     .contact_action {
       h2 {
         color: #002876;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
       }
-      h3 {
+      h4 {
         color: #002876;
+        padding-bottom: 0.5rem;
       }
       p {
         color: #002876;
+
+        // margin-bottom: 0.5rem;
       }
     }
 
     .service_footer {
       margin: auto;
       margin-top: 0;
-      h2 {
+      h4{
         color: #002876;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
+
       }
       p,
       i {
@@ -89,6 +102,9 @@
         @include flex(center, unset);
         i {
           font-size: 1.2rem;
+          margin-left: -0.3rem;
+         
+          
         }
       }
     }

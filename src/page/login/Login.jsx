@@ -8,16 +8,36 @@ import { Button } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
 import Contant from "../../Contant";
-
 import axios from "axios";
+
+import { useContext } from "react";
+import { UserContext } from "../../UserContext";
 
 const componentDidMount = () => {
   window.scrollTo(0, 0);
 };
 
 
+
+
+
+
+
 const Login = (props) => {
   componentDidMount();
+
+
+
+
+// /context UserValue/ 
+
+const {valueUser,setValueUser} = useContext(UserContext);
+
+
+console.log("value",valueUser)
+
+// /---------------------------------------/ 
+
 
   const [open, Setopen] = useState(false);
   const [Route, setRoute] = useState(false);
@@ -57,6 +77,7 @@ const Login = (props) => {
 
       if ((token.data.accessToken = true)) {
         setRoute(true);
+        setValueUser(true)
       }
     } catch (error) {
       if (error.message != null) {
@@ -67,6 +88,7 @@ const Login = (props) => {
   };
 
   if (Route === true) {
+  
     props.history.push("/");
   }
 

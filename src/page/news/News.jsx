@@ -4,8 +4,12 @@ import "./News.scss";
 import PostCard from "../../components/postcard/PostCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import Contant from "../../Contant";
+
+import MenuAbout_data from "../../assets/MenuAbout";
+import MenuAbout from "../../components/menu_about/MenuAbout";
 
 
 const componentDidMount = () => {
@@ -31,11 +35,24 @@ const News = (props) => {
     fetchData();
   }, [props]);
 
+
+
+  // /----------------------------------------/ 
+
+  
   return (
     <div className="main_news">
       <div className="main_news__frame_title_news">
-        <h1>Tin Tức</h1>
+        <h1>Tin Tuc</h1>
       </div>
+
+      
+
+
+
+
+
+
 
       <div className="line_topic">
         <div className="form_topic">

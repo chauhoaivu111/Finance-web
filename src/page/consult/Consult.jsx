@@ -10,7 +10,7 @@ import { Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 const componentDidMount = () => {
-  window.scrollTo(0, 100);
+  window.scrollTo(0, 10);
 };
 
 const Consult = () => {

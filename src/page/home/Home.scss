@@ -3,6 +3,89 @@
 
 
 
+
+.image_bannerss {
+
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile{
+        display: none;
+    }
+}
+
+
+.image_banner_mobile{
+
+
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include mobile{
+        display: block;
+    }
+}
+
+.img_sub_banner_resize{
+
+    h3{
+        display: none;
+        text-align: center;
+        color: #FF5959;
+       
+        
+        font-size: 2rem;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile{
+            display: block;
+            padding-top: 4rem;
+            
+        }
+    }
+
+
+
+    .none_resizes{
+
+       
+
+    
+
+        @include tablet{
+            display: none;
+        }
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .resizes{
+
+        display: none;
+
+        width: 90%;
+        margin: auto;
+
+        @include tablet{
+            display: none;
+        }
+
+        @include mobile{
+            display: block;
+        }
+    }
+
+}
+
 .main_home{
     min-height: max-content;
 
@@ -11,7 +94,7 @@
     &__banner {
         width: 100%;
         max-height: max-content;
-        margin-top: 8rem;
+        margin-top: -2rem;
         height: 700px;
 
         display: grid;
@@ -19,12 +102,12 @@
 
         @include tablet{
             grid-template-columns: repeat(1,1fr);
-            margin-top: 1rem;
+            margin-top: -8rem;
         }
 
         @include mobile{
             grid-template-columns: repeat(1,1fr);
-            margin-top: 1rem;
+            margin-top: -7rem;
         }
 
         .intro{
@@ -33,11 +116,13 @@
                 
                 @include flex(center,center);
                 margin-top: 10%;
-                margin-left: -4rem;
+                // margin-left: -4rem;
+                display: none;
 
                 @include mobile{
                     width: 99%;
                     margin-left: 0px;
+                    display: block
                     
                 }
             }
@@ -54,8 +139,11 @@
 
         .image_banner{
 
+            display: none;
+
             @include mobile {
                 margin-top: -10rem;
+                display: block;
             }
         }
     }
@@ -75,7 +163,13 @@
     .famous_service{
         margin: auto;
         @include flex(unset,center);
-        padding: 5rem 0px 5rem 0px;
+        padding: -0.5rem 0px 5rem 0px;
+
+        margin-top: -5rem !important;
+
+        @include mobile{
+            margin-top: -8rem !important;
+        }
 
         h2{
             color: #7185CD;
@@ -100,12 +194,47 @@
     .sub2_image{
         width: 95%;
         margin: auto;
-        margin-top: 10rem;
+        margin-top: 5rem;
 
         @include mobile{
             margin-top: 5rem;
+            display: none;
             
         }
+    }
+    .sub2_imagess{
+
+        display: none;
+
+        h3{
+            display: none;
+            text-align: center;
+            color: #FF5959;
+           
+            
+            font-size: 2rem;
+    
+            @include tablet {
+                display: none;
+            }
+    
+            @include mobile{
+                display: block;
+                padding-top: 2rem;
+                
+            }
+        }
+
+        @include tablet{
+            display: none;
+        }
+
+        @include mobile{
+            display: block;
+            
+        }
+
+
     }
 
 
@@ -122,6 +251,7 @@
 
         @include mobile{
             grid-template-columns: repeat(1,1fr);
+            margin-top: -4rem;
         }
       
       
@@ -131,7 +261,7 @@
 
             margin: auto;
             height: 24rem;
-            width: 55%;
+            width: 70%;
             box-shadow: $box-shadow;
             border-radius: 20px;
             margin-top: 10rem;
@@ -163,7 +293,8 @@
                     }
                 }
                 .content_name{
-                    margin-left: 2rem;
+                    margin-left: 1.5rem;
+                   
                 }
             }
 
@@ -229,10 +360,11 @@
 
             margin: auto;
             height: 24rem;
-            width: 55%;
+            width: 70%;
             box-shadow: $box-shadow;
             border-radius: 20px;
             margin-top: 2rem;
+            // background-color: #7185CD;
             
 
            padding-top: 3rem;
@@ -262,7 +394,7 @@
                     }
                 }
                 .content_name{
-                    margin-left: 2rem;
+                    margin-left: 1.5rem;
                 }
             }
 
@@ -328,7 +460,7 @@
 
             margin: auto;
             height: 24rem;
-            width: 55%;
+            width: 70%;
             box-shadow: $box-shadow;
             border-radius: 20px;
             margin-top: 15rem;
@@ -344,6 +476,7 @@
             .first_content{
                 display: flex;
                 @include flex(center,center);
+                
                
                
 
@@ -359,7 +492,7 @@
                     }
                 }
                 .content_name{
-                    margin-left: 2rem;
+                    margin-left: 1.5rem;
                 }
             }
 

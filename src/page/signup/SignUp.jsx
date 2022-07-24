@@ -64,7 +64,7 @@ const SignUp = (props) => {
           console.log("check",emptyfields)
       } 
       
-      else if(client.passwordagain != client.password) {
+      else if(client.passwordagain !== client.password) {
         setOpens(true)
 
       }

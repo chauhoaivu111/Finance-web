@@ -9,6 +9,7 @@
     box-shadow: $box-shadow;
     width: 100%;
     position: fixed;
+    z-index: 97;
 
     
     
@@ -99,7 +100,7 @@
             .frame_title_moblie{
                 @include flex(center,unset);
 
-                height: 5rem;
+                height: 5em;
                 border-bottom: 0.2px solid #F5F5F5;
                 p{
                     font-size: large;
@@ -142,7 +143,7 @@
         
     }
         .logo{
-            width: 8rem;
+            width: 7rem;
             // height: 0rem;
             margin-top: -2rem;
             @include tablet{

@@ -4,18 +4,31 @@
 .main_about{
     padding-top: $header-height;
 
+
+
+   
+
     &__banner_office{
-        width: 95%;
-        height: 90%;
+        width: 80%;
+        height: 60%;
         margin: auto;
-        margin-top: 3rem;
+        margin-top: -6rem;
+
+        @include mobile{
+        margin-bottom: 4rem;
+        width: 100%;
+        height: 90%;
+        margin-top: -6rem;
+
+
+        }
 
        
 
         img{
             width: 100%;
             height: 100%;
-            border-radius: 20px;
+            
         }
 
     }
