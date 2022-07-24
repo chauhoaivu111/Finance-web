@@ -83,7 +83,7 @@ const Header = () => {
             <div className="frame_title_moblie">
               <Link to ={item.Route} >
               
-              <p>{item.title}</p>
+              <p  onClick={() => setCloseClick()}>{item.title}</p>
               </Link>
               
             </div>
