@@ -49,9 +49,37 @@ const Header = () => {
     },
   ];
 
+
+
+  const HeaderRefmobile = [
+    {
+      title: "Trang Chủ",
+      Route: "/",
+    },
+    {
+      title: "Giới Thiệu",
+      Route: "/About",
+    },
+    {
+      title: "Tin Tức",
+      Route: "/News",
+    },
+    {
+      title: "Dịch Vụ",
+      Route: "/Service",
+    },
+    {
+      title: "Liên Hệ",
+      Route: "/Consult",
+    },
+  ];
+
   const { pathname } = useLocation();
+  const { pathnamemobile } = useLocation();
 
   const active = HeaderRef.findIndex((item) => item.Route === pathname);
+
+  // const activemobile = HeaderRef.findIndex((item) => item.Route === pathnamemobile);
 
   // ----------------------------------------------
 
@@ -79,9 +107,9 @@ const Header = () => {
         </div>
 
         <div className="content_moblie">
-          {HeaderRef.map((item, index) => (
+          {HeaderRefmobile.map((item, index) => (
             <div className="frame_title_moblie">
-              <Link to ="/Login" key={index} >
+              <Link to ={item.Route} key={index} >
               
               <p  onClick={() => setCloseClick()}>{item.title}</p>
               </Link>
