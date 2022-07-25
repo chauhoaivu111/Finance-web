@@ -1,5 +1,5 @@
 {
-  "homepage": "http://chauhoavu111.github.io/Deploy",
+  "homepage": "https://chauhoavu111.github.io/Deploy",
   "name": "finance-web",
   "version": "0.1.0",
   "private": true,
@@ -25,12 +25,13 @@
     "react-scripts": "5.0.1",
     "sub-vn": "0.0.2",
     "swiper": "^8.3.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.73.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b FE -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
