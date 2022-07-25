@@ -89,8 +89,7 @@ const Header = () => {
   ClickActiveRef(menu_ref, menu_toggle_ref);
 
   const setActiveClick = () => menu_ref.current.classList.add("active_drawer");
-  const setCloseClick = () =>
-    menu_ref.current.classList.remove("active_drawer");
+  const setCloseClick = () => menu_ref.current.classList.remove("active_drawer");
 
   // ---------------------------------------------
 
