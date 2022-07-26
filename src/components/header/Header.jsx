@@ -96,7 +96,7 @@ const Header = () => {
   return (
     <div className="main_header">
       <div className="main_header__drawer_moblie" ref={menu_toggle_ref}>
-        <i class="bx bx-menu" onClick={() => setActiveClick}></i>
+        <i class="bx bx-menu" onClick={() => setActiveClick()}></i>
       </div>
       <div className="main_header__main_drawer" ref={menu_ref}>
         <div className="button_close">
