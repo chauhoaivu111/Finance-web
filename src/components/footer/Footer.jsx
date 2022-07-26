@@ -2,8 +2,6 @@ import React from "react";
 import "./Footer.scss";
 import MainLogo from "../../assets/logo/Main_logo.jpg";
 import { Link } from "react-router-dom";
-import Zalo from "../../assets/logo/zalo_img.jpg";
-import Facebook from "../../assets/logo/facebook_img.jpg";
 const Footer = () => {
   return (
     <div className="main_footer">
