@@ -1,0 +1,132 @@
+@use "../../sass/" as *;
+
+
+
+.main_card_element_right:hover{
+
+  box-shadow: $box-shadow;
+  transform: translateY(-10px);
+
+}
+.main_card_element_right {
+  width: 100%;
+  height: 17rem;
+  background-color: #f9faff;
+  border-radius: 15px;
+  // margin-top: 3rem;
+  margin: auto;
+  // margin-top: 4rem;
+  margin-top: 1rem;
+
+  border: 0.5px solid #EDEDED;
+  // box-shadow: $box-shadow;
+  // background-color: #0038FE;
+
+  @include tablet {
+    height: 27rem;
+    width: 75%;
+
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 27rem;
+    
+  }
+
+  .first_element {
+    // background-color: aqua;
+    width: 100%;
+
+    // display: flex;
+    // @include flex(unset,center);
+
+    // padding-top: 3.2rem;
+
+    margin: auto;
+
+    .sub_stye_card {
+      width: 100%;
+      //  display: flex;
+      // @include flex(unset,center);
+      margin: auto;
+      border-radius: 20px;
+
+      // background-color: #0038FE;
+
+      .icons {
+        width: 100%;
+        height: 10rem;
+        text-align: center;
+        border-radius: 20px;
+
+        @include tablet {
+          height: 20rem;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          background-size: cover;
+        }
+      }
+      .frame_content {
+        // margin-left: rem;
+        width: 85%;
+        h2 {
+          color: #001d83;
+          padding-left: 1rem;
+          padding-top: 1rem;
+          padding-bottom: 0.5rem;
+          white-space: nowrap;
+          // text-overflow: ellipsis;
+          // overflow: hidden;
+          // text-align: left;
+        }
+        p {
+          padding-left: 1rem;
+          font-size: 0.7rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .more_contact {
+    @include flex(center, unset);
+    color: #0038fe;
+    font-weight: 500;
+    i {
+      font-size: large;
+    }
+    p {
+      align-items: center;
+      @include flex(center, unset);
+      padding-left: 2rem;
+      padding-top: 0.5rem;
+      font-family: Inter;
+      font-style: italic;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  .button_card {
+    width: 12rem;
+    height: 2rem;
+    margin: auto;
+    margin-top: 1.5rem;
+
+    button {
+      width: 100%;
+      height: 100%;
+      background-color: #0038fe;
+      color: white;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+  }
+}
+
+

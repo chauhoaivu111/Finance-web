@@ -15,7 +15,7 @@ const componentDidMount = () => {
 };
 
 const SignUp = (props) => {
-  componentDidMount();
+  // componentDidMount();
 
   const [open, setOpen] = useState(false);
   const [opens, setOpens] = useState(false);

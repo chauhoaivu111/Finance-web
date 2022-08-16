@@ -1,0 +1,21 @@
+
+
+@use  '../../sass/' as *;
+
+.frame_style_MenuAbout{
+
+     
+   display: flex;
+   @include flex(unset,center);
+
+   margin-left: -4rem;
+
+   @include mobile{
+       display: block;
+       margin: auto;
+  
+      
+       
+
+   }
+}

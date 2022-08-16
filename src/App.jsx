@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Route
-        render={(props) => (
+        render={() => (
           <div>
             
            

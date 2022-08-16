@@ -6,7 +6,7 @@ import  './ThemeMenu.scss'
 import { Link } from 'react-router-dom';
 
 import MenuAbout from '../menu_about/MenuAbout';
-import MenuAbout_data from '../../assets/MenuAbout';
+import MenuAbout_data from '../../assets/data/MenuAbout';
 
 import { useLocation } from 'react-router-dom';
 

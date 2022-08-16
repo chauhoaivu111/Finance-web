@@ -1,14 +1,15 @@
 @use "../../sass/" as *;
 
 .main_loan {
-  padding-top: $header-height;
+  padding-top: -1rem;
+  
 
   width: 80%;
   margin: auto;
 
   .title_loan {
-    padding-top: 8%;
-    padding-bottom: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin: auto;
     @include flex(unset, center);
     h1 {

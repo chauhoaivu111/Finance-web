@@ -1,38 +1,64 @@
+@use "../../sass/" as *;
 
-@use '../../sass/' as *;
+.main_service {
+  padding-top: 8rem;
 
-.main_service{
+  &__frame_title_service {
+    margin: auto;
+    @include flex(center, center);
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    h1 {
+      color: #002876;
+    }
+  }
 
-    padding-top: $header-height;
+  .style_frame_main_card {
+    // width: 75%;
+
+    margin: auto;
+
+    margin-top:3rem;
     
-    &__frame_title_service{
-        margin: auto;
-        @include flex(center,center);
-        padding-top: 3rem;
-        padding-bottom: 6rem;
-        h1{
-            color: #002876;
-        }
+  }
+
+  .frame_service_item {
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: auto;
+    // margin-bottom: 10rem;
+    column-gap: 27px;
+      row-gap: 27px;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+     
     }
 
-    .frame_service_item{
-
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-
-
-        margin-bottom: 10rem;
-
-        @include tablet{
-            grid-template-columns: repeat(1,1fr);
-            margin-bottom: 5rem;
-        }
-
-        @include mobile{
-            grid-template-columns: repeat(1,1fr);
-            margin-bottom: 5rem;
-
-        }
-
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 5rem;
     }
+  }
+
+
+  
 }
+
+
+.background_slide_new{
+
+  width: 100%;
+  background-color: #1820E4;
+  margin-top: 2rem;
+
+  h2{
+      color : black;
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+}
+

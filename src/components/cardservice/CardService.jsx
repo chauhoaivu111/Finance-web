@@ -2,24 +2,52 @@ import React from "react";
 import "./CardService.scss";
 import { Link } from "react-router-dom";
 
+
 const CardService = (props) => {
+
+  const stringtitle = props.Title
+  // console.log("dddd",stringtitle);
+
+  const shortTitle = JSON.stringify(stringtitle)
+
+  var  alert = false
+
+  if (shortTitle.length > 20 ) {
+    alert = true;
+
+  }
+  
+  console.log(shortTitle)
+
   return (
-    <div className="main_card">
-      <div className="first_element">
+
+
+    <Link to={`/Product/detail/${props.id}`} >
+    <div className="main_cardss">
+      <div className="first_elementss">
+        <div className="sub_stye_card">
+
+
         <div className="icons">
           <img src={props.image} alt='' />
         </div>
         <div className="frame_content">
-          <h3>{props.Title}</h3>
-          <p>{props.Content}</p>
+          {
+            alert === true ?  <h2>{props.Title.substring(0,16) + "..."}</h2> :  <h2>{props.Title}</h2>
+            
+          }
+         
+          <p>{props.date}</p>
         </div>
+        </div>
+      
       </div>
 
       <div className="more_contact">
         <Link to=''>
         <p>
           {" "}
-          <i class="bx bx-right-arrow-alt"></i>Thông tin chi tiết{" "}
+          <i class="bx bx-right-arrow-alt"></i>Thông tin chi tiết{" "}{props.content}
         </p>
         </Link>
         
@@ -29,6 +57,8 @@ const CardService = (props) => {
         
       </div>
     </div>
+    </Link>
+    
   );
 };
 

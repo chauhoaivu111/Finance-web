@@ -8,7 +8,7 @@ const MenuAbout = (props) => {
   return (
     <div className='main_menu_about'>
         <div className={`frame_title ${actives}`}>
-            <h3>{props.title}</h3>
+            <p>{props.title}</p>
         </div>
 
     </div>

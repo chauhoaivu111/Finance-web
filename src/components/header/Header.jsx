@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Header.scss";
 import { Link, useLocation } from "react-router-dom";
-import MainLogo from "../../assets/logo/Main_logo.jpg";
+import MainLogo from "../../assets/logo/Logo CTY.png";
 import { useContext } from "react";
 import { UserContext } from "../../UserContext";
 
@@ -23,7 +23,7 @@ const ClickActiveRef = (content_Ref, toggle_Ref) => {
 const Header = () => {
   //  contextUser -----------------------------------------
 
-  const { valueUser,setValueUser } = useContext(UserContext);
+  const { valueUser } = useContext(UserContext);
 
   // -----------------------------------------------------------
   const HeaderRef = [
@@ -37,10 +37,13 @@ const Header = () => {
     },
     {
       title: "Tin Tức",
-      Route: "/News",
+      Route: "/New",
+      
+      
+      
     },
     {
-      title: "Dịch Vụ",
+      title: "Sản Phẩm",
       Route: "/Service",
     },
     {
@@ -65,7 +68,7 @@ const Header = () => {
       Route: "/News",
     },
     {
-      title: "Dịch Vụ",
+      title: "Sản Phẩm",
       Route: "/Service",
     },
     {
@@ -77,7 +80,7 @@ const Header = () => {
   const { pathname } = useLocation();
   const { pathnamemobile } = useLocation();
 
-  const active = HeaderRef.findIndex((item) => item.Route === pathname);
+  const active = HeaderRef.findIndex((item) => item.Route === pathname)  ;
 
   // const activemobile = HeaderRef.findIndex((item) => item.Route === pathnamemobile);
 
@@ -117,9 +120,17 @@ const Header = () => {
           ))}
 
           <div className="frame_button_moblie">
-            <Link to="/Login">
-              <button> Tạo Tài Khoản</button>
-            </Link>
+
+          {valueUser !== true ? (
+          <Link to="/Login" onClick={() => setCloseClick()}>
+          <button> Tạo Tài Khoản</button>
+        </Link>
+        ) : (
+          <Link to="/User" onClick={() => setCloseClick()}>
+          <button>Account</button>
+        </Link>
+        )}
+           
           </div>
         </div>
       </div>
@@ -137,6 +148,11 @@ const Header = () => {
           ))}
         </div>
 
+
+          
+          
+       
+
         {valueUser !== true ? (
           <div className="button_header">
             <Link to="/Login">
@@ -145,8 +161,8 @@ const Header = () => {
           </div>
         ) : (
           <div className="button_header">
-            <Link to="/Login" onClick={() =>setValueUser(false)}>
-              <button> Đăng Xuất</button>
+            <Link to="/User" >
+              <button> Tài Khoản</button>
             </Link>
           </div>
         )}

@@ -197,7 +197,7 @@ const LoanService = () => {
   );
 
   return (
-    <div className="main_loan">
+    <div className="main_loan" data-aos="fade-up">
       <div className="title_loan">
         <h1>Đăng Kí khoản vay</h1>
       </div>
